@@ -1,0 +1,12 @@
+<h1>NEW RESTAURANT</h1>
+
+<div class="form">
+  <%= simple_form_for(@restaurant) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :category, collection: Restaurant::CATEGORY %>
+    <%= f.submit %>
+  <% end %>
+</div>
+
+<div class="btn_brown"><%= link_to "Restaurant's list", restaurants_path %></div>
