@@ -75,3 +75,12 @@ a:hover {
   text-decoration: underline;
   color: grey;
 }
+
+.mb-3.required{
+  margin-bottom: 16px;
+}
+
+.invalid-feedback{
+  color: gray;
+  font-style: italic;
+}
